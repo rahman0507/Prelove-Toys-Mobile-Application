@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".profileuser">
+
+    <TextView
+
+        android:id="@+id/profiletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="100px" />
+
+    <EditText
+        android:id="@+id/pr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pr6"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="10dp"
+        android:gravity="start"
+        android:hint="Full name"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/pr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="10dp"
+        android:gravity="start"
+        android:hint="Username"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+
+    <EditText
+        android:id="@+id/pr3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="10dp"
+        android:gravity="start"
+        android:hint="Phone Number"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/pr4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/security"
+        android:drawablePadding="10dp"
+        android:gravity="start"
+        android:hint="New Password"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/pr5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:text="UPDATE"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        app:backgroundTint="@color/purple"
+        app:rippleColor="@color/purple" />
+
+    <ImageView
+        android:id="@+id/pr6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profiletxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginRight="143dp"
+        android:gravity="center"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</RelativeLayout>
+

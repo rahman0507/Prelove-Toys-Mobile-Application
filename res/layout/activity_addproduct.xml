@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addproduct">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/purple"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <TextView
+      android:id="@+id/upload"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="New Toy"
+      android:textColor="@color/black"
+      android:textSize="22sp"
+      app:layout_constraintBottom_toBottomOf="@+id/toolbar1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/toolbar1"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ScrollView
+      android:id="@+id/scrollView2"
+      android:layout_width="match_parent"
+      android:layout_height="675dp"
+      android:layout_margin="5dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginBottom="10dp"
+      android:fillViewport="true"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.636"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/toolbar1"
+      app:layout_constraintVertical_bias="0.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1">
+
+
+      <TextView
+          android:id="@+id/toyname"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:isScrollContainer="false"
+          android:text="Toy Name"
+          android:textColor="@color/black"
+          android:textSize="20sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.078"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/toolbar1" />
+
+      <EditText
+          android:id="@+id/toyname2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:padding="5dp"
+          android:background="@drawable/recshape"
+          android:ems="10"
+          android:hint="Name of toy"
+          android:inputType="textPersonName"
+          android:minHeight="48dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@+id/toyname"
+          app:layout_constraintTop_toBottomOf="@+id/toyname" />
+
+      <TextView
+          android:id="@+id/category"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:text="Toy Category"
+          android:textColor="@color/black"
+          android:textSize="20sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.093"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/toyname2" />
+
+      <Spinner
+          android:id="@+id/spinner"
+          android:entries="@array/category_options"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:padding="5dp"
+          android:background="@drawable/recshape"
+          android:contentDescription="@string/category"
+          android:dropDownWidth="match_parent"
+          android:spinnerMode="dropdown"
+          app:layout_constraintTop_toBottomOf="@+id/category" />
+
+      <TextView
+          android:id="@+id/description"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:text="Toy Description"
+          android:textColor="@color/black"
+          android:textSize="20sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.093"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+      <EditText
+          android:id="@+id/Description1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:padding="5dp"
+          android:background="@drawable/recshape"
+          android:hint="Description"
+          android:inputType="textMultiLine"
+          android:minHeight="48dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/description" />
+
+      <TextView
+          android:id="@+id/price"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:text="Toy Price"
+          android:textColor="@color/black"
+          android:textSize="20sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.093"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/Description1" />
+
+      <EditText
+          android:id="@+id/Price1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:padding="5dp"
+          android:background="@drawable/recshape"
+          android:hint="Price"
+          android:inputType="numberDecimal"
+          android:minHeight="48dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/price" />
+
+      <TextView
+          android:id="@+id/location"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:text="Pickup Location"
+          android:textColor="@color/black"
+          android:textSize="20sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.093"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/Price1" />
+
+      <Spinner
+          android:id="@+id/spinnerlocation"
+          android:entries="@array/location_options"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:padding="5dp"
+          android:background="@drawable/recshape"
+          android:contentDescription="Location"
+          android:dropDownWidth="match_parent"
+          android:spinnerMode="dropdown"
+          app:layout_constraintTop_toBottomOf="@+id/location" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:text=" Upload Picture of Toys"
+          android:textColor="@color/black"
+          android:textSize="20sp" />
+
+      <ImageView
+          android:id="@+id/imageupload"
+          android:layout_width="match_parent"
+          android:layout_height="250dp"
+          android:layout_margin="15dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@drawable/recshape"
+          android:src="@drawable/addphoto" />
+
+      <Button
+          android:id="@+id/UploadBtn"
+          android:layout_width="180dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="20dp"
+          android:background="@drawable/btnbgg"
+          android:text="Upload"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          app:backgroundTint="@color/brown" />
+
+    </LinearLayout>
+  </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
